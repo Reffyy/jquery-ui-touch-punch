@@ -36,6 +36,7 @@
     }
 
     event.preventDefault();
+    event.stopPropagation();
 
     var touch = event.originalEvent.changedTouches[0],
         simulatedEvent = document.createEvent('MouseEvents');
